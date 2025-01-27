@@ -79,8 +79,61 @@ body {
 #home .btn:hover {
     background-color: #0a8c98;
 }
-https://asder12346.github.io/personal_porfolio/
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
 
+.about-image {
+    width: 30%;
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    float: left;
+}
+
+.about-content {
+    flex: 1;
+    color: #333;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #28a745;
+}
+
+.about-content .text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 70%;
+        max-width: 100%;
+        margin: 0 auto 15px auto;
+        float: none;
+    }
+
+    .about-content h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .about-content .text {
+        font-size: 1rem;
+        text-align: center;
+    }
 /* Skills Section */
 #skills {
     background-color: #f8f9fa;
