@@ -79,6 +79,8 @@ body {
 #home .btn:hover {
     background-color: #0a8c98;
 }
+
+/* About Section */
 .about-section {
     display: flex;
     flex-wrap: wrap;
@@ -91,6 +93,7 @@ body {
     width: 30%;
     max-width: 250px;
     border-radius: 10px;
+    padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     float: left;
 }
@@ -109,32 +112,10 @@ body {
 .about-content .text {
     font-size: 1.1rem;
     line-height: 1.6;
-    margin-right:40px;
+    margin-right: 40px;
     margin-bottom: 15px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .about-section {
-        flex-direction: column;
-    }
-
-    .about-image {
-        width: 70%;
-        max-width: 100%;
-        margin: 0 auto 15px auto;
-        float: none;
-    }
-
-    .about-content h2 {
-        font-size: 1.8rem;
-        text-align: center;
-    }
-
-    .about-content .text {
-        font-size: 1rem;
-        text-align: center;
-    }
 /* Skills Section */
 #skills {
     background-color: rgb(105, 172, 230);
@@ -151,16 +132,21 @@ body {
     border: none;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
 }
 
 #skills .card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 #skills .card img {
-    border-radius: 10px;
+    border-radius: 50%;
     margin-bottom: 15px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
 
 #skills h4 {
@@ -184,12 +170,13 @@ body {
     border: none;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
     margin-bottom: 30px;
 }
 
 #portfolio .card:hover {
     transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 #portfolio .card-title {
@@ -255,3 +242,29 @@ footer p {
     margin: 10px 0;
     font-size: 0.9rem;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 70%;
+        max-width: 100%;
+        margin: 0 auto 15px auto;
+        float: none;
+    }
+
+    .about-content h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .about-content .text {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+
